@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ya_jin_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zl.cn.jer.easycar.activity.myyikai.YaJinBackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_home_yajin_back_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_navi_back_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="申请退还"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/yabjin_back_cheliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车辆问题" />
+
+                <CheckBox
+                    android:id="@+id/yabjin_back_chongdian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充电麻烦" />
+
+                <CheckBox
+                    android:id="@+id/yabjin_back_zishen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自身问题" />
+
+                <CheckBox
+                    android:id="@+id/yabjin_back_ohter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/yabjin_back_xuhang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="续航里程短" />
+
+                <CheckBox
+                    android:id="@+id/yabjin_back_zuhuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="租货价格高" />
+
+                <CheckBox
+                    android:id="@+id/yabjin_back_fuwu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务不周到" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/yanjin_back_yijian"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/fuse_color_one"
+            android:gravity="top"
+            android:hint="感谢您留下的宝贵意见"
+            android:paddingLeft="15sp"
+            android:paddingTop="10dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:text="支付宝充值用户:"
+                android:textColor="@color/font_color_three"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="如果无违章记录，李彤将于22个工作日返还押金至原账户"
+                android:textColor="@color/font_color_three"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:text="租货点充值账户:"
+                android:textColor="@color/font_color_three"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:text="请您前往充值所在租货点办理退还手续"
+                android:textColor="@color/font_color_three"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:id="@+id/yajin_back_comti"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="提交"
+                android:background="@drawable/btn_yajin"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/btn_font_color"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--颜色配置-->
+    <!--主色-->
+    <color name="pirmary_color">#4BC7FF</color>
+    <!-- 辅色-->
+    <color name="fuse_color_one">#F3F8FC</color>
+    <color name="fuse_color_two">#9AB1FF</color>
+    <color name="fuse_color_three">#7BB4FF</color>
+    <color name="fuse_color_four">#DDE5F0</color>
+    <color name="fuse_color_five">#F6FF00</color>
+    <color name="fuse_color_six">#00AFEC</color>
+    <!--背景颜色-->
+    <color name="color_background">#F7F8F9</color>
+    <!--分割线颜色-->
+    <color name="divider">#EBF1F5</color>
+    <!--字体颜色-->
+    <color name="font_color_one">#FFFFFF</color>
+    <color name="font_color_two">#24BAFF</color>
+    <color name="font_color_three">#79899C</color>
+    <color name="font_color_four">#97ABC5</color>
+    <color name="font_color_five">#C8CFD6</color>
+    <color name="font_color_six">#CAEEFF</color>
+    <color name="font_color_seven">#F5F336</color>
+    <color name="font_color_eight">#FF3E64</color>
+<!--页面确认按钮背景字体颜色-->
+    <color name="btn_bg_color">#4BC7FF</color>
+    <color name="btn_font_color">#FFFFFF</color>
+    <!--登录按钮-->
+    <color name="login_btn_color">#00A0E9</color>
+    <color name="login_font_color">#FFFFFF</color>
+    <!--导航颜色-->
+    <color name="daohang_color_miaobiao">#24BAFF</color>
+    <color name="danghang_font_color">#24BAFF</color>
+    <!--预约按钮-->
+    <color name="yuyue_bg_color">#24BAFF</color>
+    <color name="yuyue_font_color">#FFFFFF</color>
+    <!--城市-->
+    <color name="city_one_miaobiao_color">#EBF1F5</color>
+    <color name="city_one_font_color">#24BAFF</color>
+    <color name="city_two_miaobiao_color">#97ABC5</color>
+    <color name="city_two_font_color">#EBF1F5</color>
+
+</resources>

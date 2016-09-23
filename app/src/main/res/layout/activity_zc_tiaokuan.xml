@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zc_tiaokuan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zl.cn.jer.easycar.activity.Zc_tiaokuan">
+
+    <WebView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        />
+    <TextView
+        android:id="@+id/tongyi"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="同意"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/login_btn"
+
+        />
+
+
+</RelativeLayout>

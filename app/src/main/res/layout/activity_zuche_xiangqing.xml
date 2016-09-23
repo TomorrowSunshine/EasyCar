@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zuche_xiangqing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.SearchXiangQing.ZucheXiangqing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/zuche_xiangqing_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_navi_back_dark" />
+
+        <TextView
+            android:id="@+id/carcode"
+            android:layout_width="290dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:text="车牌号" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="80dp" />
+
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_alignParentBottom="true"
+            android:layout_height="10dp"
+
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            ></LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/shapesemo3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时租"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#24BAFF" />
+
+            <TextView
+                android:id="@+id/shizu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="15.00元/时"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#24BAFF" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="不足1小时按1小时收取，超过1小时按分钟计费" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="全天租" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(24h)"
+
+                android:textSize="10sp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="110.00元/天"
+                android:id="@+id/Allday" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shapesemo3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不计免赔服务"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#24BAFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="9.00元/日"
+                android:id="@+id/everyday"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#C8CFD6"
+            android:text="您的驾龄未满半年，为你提供此项保险服务；您不必承担保险范围内的任何赔偿，助您安全出行！" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="温馨提示："
+        />
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tishi1"
+            android:textColor="#C8CFD6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#C8CFD6"
+        android:id="@+id/tishi2" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tishi3"
+        android:layout_width="match_parent"
+        android:textColor="#C8CFD6"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/xiangqing_xieyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="4.查看该车商家协议"
+        android:textColor="#24BAFF"
+        />
+
+    <Button
+
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="预约"
+        android:textColor="#ffffff"
+        android:background="@drawable/shapesemo2"
+        android:id="@+id/xiangqing_yuyue" />
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_parking_xiang_qing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.SearchXiangQing.ParkingXiangQing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pk_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_navi_back_dark" />
+
+        <TextView
+            android:id="@+id/pk_code"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="车牌号" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pk_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="       "
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/sanshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30分钟"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/siwai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4小时内"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/sinei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4小时外"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/ershisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24小时"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/car_leixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/san_qian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/sinei_qian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/siwai_qian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/ershisi_qian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停车须知:"
+        />
+
+    <TextView
+        android:id="@+id/xuzhi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:textColor="#C8CFD6"
+        />
+
+    <TextView
+        android:id="@+id/xuzhi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="#C8CFD6"
+        android:layout_weight="2"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="预约"
+        android:textColor="#ffffff"
+        android:background="@drawable/shapesemo2"
+        android:layout_gravity="bottom|center"
+
+        android:id="@+id/button2" />
+</LinearLayout>

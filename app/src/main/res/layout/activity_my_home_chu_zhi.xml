@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#F3F8FC"
+            >
+            <ImageView
+                android:id="@+id/user_home_chuzhi_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_navi_back_dark"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="储值"
+                android:gravity="center"
+                android:textSize="18sp"
+                />
+            <ImageView
+                android:id="@+id/chuzhi_iv_jiaoyijilu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_reserve_record"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="10dp"
+            />
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/rec_edit_money"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/recharge_money"
+            android:hint="输入要充值的金额"
+            android:digits="1234567890."
+            android:textSize="13sp"
+            android:textColorHint="@color/font_color_four"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            />
+       <WebView
+           android:layout_width="match_parent"
+           android:layout_height="358dp"
+           android:id="@+id/chuzhi_wb"
+           ></WebView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_yajin"
+                android:text="支付"
+                android:textColor="@color/btn_font_color"
+                android:id="@+id/user_home_chuzhi_zhifu"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

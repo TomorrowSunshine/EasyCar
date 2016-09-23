@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zl.cn.jer.easycar.activity.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="#4bc7ff"
+    >
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_weight="1"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:src="@drawable/iv_user"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        />
+    <LinearLayout
+        android:id="@+id/ly_city"
+        android:layout_weight="7"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+
+        >
+        <ImageView
+            android:id="@+id/iv_city"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/iv_city"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="芜湖市"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/iv_search"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:src="@drawable/iv_main_search"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        />
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/iv_scan"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:src="@drawable/iv_scan"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+
+    >
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <ImageView
+      android:id="@+id/iv_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_to_my_postion"
+        android:layout_alignBottom="@id/bmapView"
+        android:padding="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="40dp"
+
+        />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_zuche"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_zuche"
+            android:text="租车"
+            android:textColor="@drawable/text_selector"
+            android:layout_gravity="center"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_chongdian"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/select_chongdian"
+            android:text="充电"
+            android:textColor="@drawable/text_selector"
+            />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_tingche"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_tingche"
+            android:text="停车"
+            android:textColor="@drawable/text_selector"
+            android:layout_gravity="center"
+            />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_dingdan"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/select_dingdan"
+            android:text="订单"
+            android:layout_gravity="center"
+            android:textColor="@drawable/text_selector"
+            />
+
+    </RadioGroup>
+</LinearLayout>

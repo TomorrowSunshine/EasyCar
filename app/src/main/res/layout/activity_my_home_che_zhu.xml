@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#F3F8FC"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/chezhu_back"
+            android:src="@drawable/ic_navi_back_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="车主认证"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="车辆品牌"
+            android:textSize="14sp" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/et_user_home_chezhu_pingpai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="车牌号码" />
+
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:id="@+id/et_user_home_chezhu_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="车辆类型" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg_leixing_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <RadioButton
+
+                    android:checked="true"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:id="@+id/bt_user_home_ranyou"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="燃油"
+                    android:background="@drawable/chezhu_selector"
+                    android:textColor="@drawable/chezhu_ziti_selector"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:button="@null"
+                    android:gravity="center"
+                    android:id="@+id/bt_user_home_diandong"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="电动"
+                    android:textSize="14sp"
+                    android:background="@drawable/chezhu_selector"
+                    android:textColor="@drawable/chezhu_ziti_selector"
+                    />
+
+                <RadioButton
+                    android:button="@null"
+                    android:gravity="center"
+                    android:id="@+id/bt_user_home_hunhe"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="混合"
+                    android:textSize="14sp"
+                    android:background="@drawable/chezhu_selector"
+                    android:textColor="@drawable/chezhu_ziti_selector"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="证件照片" />
+
+        <ImageView
+            android:id="@+id/iv_user_home_chezhu_img"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#fff"
+            android:src="@drawable/placeholder_in_car_owner" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_tips" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="请上传车辆行驶证照片" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/user_home_chezhu_comint"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_yajin"
+            android:text="提交认证"
+            android:textColor="@color/btn_font_color"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

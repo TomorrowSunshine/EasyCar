@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 填充的颜色 -->
+         <solid android:color="#FFFFFF" />
+        <!-- 设置矩形的四个角为弧形 -->
+      <!-- android:radius 弧形的半径 -->
+    <stroke android:width="0.1dp" android:color="#4BC7FF" />
+
+    <!--   实现渐变
+    <gradient android:angle="270" android:endColor="#DDE5F0"
+        android:startColor="#4BC7FF"/>
+
+        -->
+    <corners
+           android:bottomLeftRadius="14dp"
+          android:bottomRightRadius="14dp"
+        android:topLeftRadius="14dp"
+        android:topRightRadius="14dp" />
+</shape>
